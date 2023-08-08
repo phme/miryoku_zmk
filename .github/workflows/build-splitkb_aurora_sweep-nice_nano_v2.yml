@@ -3,7 +3,10 @@
 
 name: 'Build splitkb_aurora_sweep nice_nano_v2'
 # swweeep
-on: workflow_dispatch
+on: 
+    push:
+    pull_request:
+    workflow_dispatch:
 jobs:
   build:
     uses: ./.github/workflows/main.yml
